@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Giftery.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Giftery</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="position-fixed w-100" style="z-index: 999;">
+        <nav class="navbar" style="background-color: #ff8fa4;">
+            <div class="container-fluid container">
+                <div class="nav-1 w-100 d-flex">
+                    <div class="contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Call Us"><a
+                            href=""><i class="fa-solid fa-mobile-screen-button"></i> +91 1345 5674 57</a>
+                    </div>
+                    <div class="question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"><a href=""><i
+                                class="fa-solid fa-message"></i> Any Questions?</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar p-0" style="background-color: #ffecf2;">
+            <div class="container-fluid">
+                <div class="container header">
+                    <div class="row align-items-baseline">
+                        <div class="col-3 col-md-3 col-lg-2"><a href="index.html"><img src="my img/tey (1).png"
+                                    alt=""></a>
+                        </div>
+                        <div class="col-9 col-md-9 col-lg-5">
+                            <div class="search-bar position-relative"><input type="text"
+                                    placeholder=" Find Your Gifts..." class="rounded-pill w-100 p-1"
+                                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search">
+                                <div class="search-icon position-absolute"><i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <div class="row align-items-baseline">
+                                <div class="col-12 col-sm-6 col-lg-7 select-btn">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-01" data-bs-toggle="modal"
+                                        style="background-color:#ff8fa4" data-bs-target="#staticBackdrop">
+                                        <div class="select-place" style="font-size: 14px; font-weight: 600;">
+                                            <i class="fa-solid fa-location-dot pe-2"></i> Select Your Country
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>
+
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered text-center">
+                                            <div class="modal-content" style="background-color: #ffdae0">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel"><u><b
+                                                                style="color: rgb(122, 23, 23);">Let's Personalize
+                                                                Your Experience!</b></u></h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p style="color: rgb(122, 23, 23);"><i>Find the perfect gifts for
+                                                            you or
+                                                            your loved ones – it's like magic!</i></p>
+                                                    <div class="country d-flex flex-wrap justify-content-around">
+                                                        <div class="india-1"><input type="radio" name="india"
+                                                                required><b style="color: rgb(122, 23, 23);">In
+                                                                India</b></div>
+                                                        <div class="india-1"><input type="radio" name="india"
+                                                                required><b style="color: rgb(122, 23, 23)">Outside
+                                                                India</b>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="pincode mt-3">
+                                                        <input type="text" class="w-75 p-1 rounded-pill"
+                                                            style="color: rgb(122, 23, 23); font-weight: 600;" required
+                                                            placeholder="Enter Your Pincode or Country Name">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer justify-content-around">
+
+                                                    <a href="index.html"><button type="button"
+                                                            class="btn continue-btn"
+                                                            style="background-color: crimson; color: pink;">Continue
+                                                            Shopping</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-5 m-auto">
+                                    <div class="d-flex flex-wrap main-icon">
+
+                                        <div class="cart position-relative" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Cart">
+
+                                            <a href="" type="button" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                            <span
+                                                class="position-absolute top-0 translate-middle badge rounded-pill bg-info text-danger">
+                                                0</span>
+                                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                                aria-labelledby="offcanvasRightLabel">
+                                                <div class="offcanvas-header" style="background-color: #f391a1;">
+                                                    <h5 id="offcanvasRightLabel">My Cart</h5>
+                                                    <button type="button" class="btn-close text-reset"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body" style="background-color: #ffdae0;">
+                                                    <img src="my img/513c53a03f182d3a8966bc3a6c0a2e54.jpg" alt=""
+                                                        class="w-100">
+
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+
+                                        <div class="wishlist position-relative" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Wishlist">
+                                            <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                                aria-controls="offcanvasRight"><i class="fa-regular fa-heart"></i></a>
+                                            <span
+                                                class="position-absolute top-0 translate-middle badge rounded-pill bg-warning text-danger">
+                                                0</span>
+                                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                                                aria-labelledby="offcanvasRightLabel">
+                                                <div class="offcanvas-header"
+                                                    style="background-color: #f391a1; color: rgb(117, 25, 25);">
+                                                    <h5 id="offcanvasRightLabel">Favourite Items</h5>
+                                                    <button type="button" class="btn-close text-reset"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body" style="background-color: #ffdae0;">
+                                                    <img src="my img/0ef3b8c222b707583b00f67a147d7a2e.gif" alt=""
+                                                        class="w-100">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="account" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            title="My Account">
+                                            <a href="myaccount.html"><i class="fa-solid fa-user"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Personal Occasion
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="birthday.html">Birthday Special</a></li>
+                                            <li><a class="dropdown-item" href="anniversary.html">Anniversary Special</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="wedding.html">Wedding & Engagement</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="babyshower.html">Baby Shower</a></li>
+
+                                            <li><a class="dropdown-item" href="housewarming.html">Housewarming Gifts</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="customized.html">Customized Gift</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="asthetics.html">Asthetics Gifts</a>
+                                    </li>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="aboutus.html">About Us</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Recipients
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="wife.html">Wife</a></li>
+                                            <li><a class="dropdown-item" href="husband.html">Husband</a></li>
+                                            <li><a class="dropdown-item" href="mom.html">Mom</a></li>
+                                            <li><a class="dropdown-item" href="dad.html">Dad</a></li>
+                                            <li><a class="dropdown-item" href="sister.html">Sister</a></li>
+                                            <li><a class="dropdown-item" href="brother.html">Brother</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <a href="fastshipping.html" class="fast-shipping">
+                                <img src="my img/scooter-animation-fifth.gif" alt=" " class="w-100">
+                            </a>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--header end -->
+
+    <!-- main start -->
+    <main>
+        <!-- hero section start-->
+        <div class="hero">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="cake.html"> <img src="my img/cake_d_banners_5_1729762847969.webp" class="d-block w-100"
+                                alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="flower.html"><img src="my img/christmas_d_banners_1666_1730979434353.gif"
+                                class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="my img/birthday_d_banners_5_20240521142730.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- hero section end -->
+        <!-- Curated for you start -->
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="products">
+                    <div class="title">
+                        <div class="title-name"><span>Curated For You</span></div>
+                        <div class="title-detail">
+                            <p>Discover Our Curators Top Picks</p>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="cake.html" class="text-black">
+                                <div class="product-1">
+                                    <div class="product-img"><img src="my img/32358723176828aff27dd4bd09e9fc24.jpg"
+                                            alt="" class="w-100">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>Cake</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="softtoy.html" class="text-black">
+                                <div class="product-1">
+                                    <div class="product-img"><img src="my img/d1781df29ccdc694bcc9d69f4ab96af5.jpg"
+                                            alt="" class="w-100">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>Soft Toys</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="flower.html" class="text-black">
+                                <div class="product-1">
+                                    <div class="product-img"><img src="my img/b552e37d4864108a86d9096630f6fa4d.jpg"
+                                            alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>Flowers</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="beautycare.html" class="text-black">
+                                <div class="product-1">
+                                    <div class="product-img"><img src="my img/8e9ae9a7fc19b6eca3359d208753c86d.jpg"
+                                            alt="" class="w-100">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>Beauty Care</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="fragrance.html" class="text-black">
+                                <div class="product-1">
+                                    <div class="product-img"><img src="my img/2dde976ee4e7840dd025dbf86ea633b2.jpg"
+                                            alt="" class="w-100">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>Fragrance</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="mystery.html" class="text-black">
+                                <div class="product-1">
+                                    <div class="product-img"><img src="my img/63d369f34870a7216e72b607fa73411d.jpg"
+                                            alt="" class="w-100">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>Mystery Box</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Curated for you end -->
+
+        <!-- most loved  start-->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="title">
+                    <div class="title-name"><span>Best Selling</span></div>
+                    <div class="title-detail">
+                        <p>Discover Our most-loved Top Picks</p>
+                    </div>
+                </div>
+
+                <div class="best-selling">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="addtocart.html">
+                                <div class="card">
+
+                                    <img src="my img/3582abe7ffc372a2603d18ba1bb4f6c3.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">DIY Tulip Night Light, Tulip Lamp with Glass Cover</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="addtocart.html">
+                                <div class="card">
+                                    <img src="my img/8fead01e08343941850009e2f38ba844.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Krow Rabbit with Chain Reversible Bunny Rabbit </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="addtocart.html">
+                                <div class="card">
+                                    <img src="my img/1d83f723da92b46d676fb34a88293990.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Hers & His Printed Couple Coffee Mugs Set
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="addtocart.html">
+                                <div class="card">
+                                    <img src="my img/bc99ebfedae22999ce1afc0aa9290b20.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Happy Birthday Chocolate Gift Box & Greeting Card</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="addtocart.html">
+                                <div class="card">
+                                    <img src="my img/3dd1ee3d67744ae304212596de51a2c9.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Metal Horse Showpiece for Home Decor| Black,Golden,Silver
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="addtocart.html">
+                                <div class="card">
+                                    <img src="my img/ed28a13ebb0cc0e106c504414d1dc388.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Notepads A6 Hardcover Looseleaf Journal Office Business
+                                            Diary
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- most loved end -->
+
+        <!-- overseas gifts section start -->
+        <div class="container-fluid container">
+            <div class="overseas-gift">
+                <div class="title">
+                    <div class="title-name"><span>Send Surprises Overseas</span></div>
+                    <div class="title-detail">
+                        <p>Collection of Overseas Gifts For You</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <a href="overseasgifts.html">
+                            <div class="place-name">
+
+                                <div class="palce-img">
+                                    <img src="my img/d759971cb188fdf49bd989ea61a954a5.jpg" alt="not found"
+                                        class="w-100">
+                                    <div class="img-hover"></div>
+                                </div>
+
+                                <h4 class="text-center pt-2 text-black-50">SEND GIFTS TO GERMNY</h4>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <a href="overseasgifts.html">
+                            <div class="place-name">
+                                <div class="palce-img">
+                                    <img src="https://i.pinimg.com/736x/e5/af/0a/e5af0a07d4a7efc76747230d322a6a8c.jpg"
+                                        alt="not found" class="w-100">
+                                    <div class="img-hover"></div>
+                                </div>
+                                <h4 class="text-center pt-2 text-black-50">SEND GIFTS TO USA</h4>
+
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="overseasgifts.html">
+                            <div class="place-name">
+                                <div class="palce-img">
+                                    <img src="my img/cb02a15f82b2576af1725b13689839d0.jpg" alt="not found"
+                                        class="w-100">
+                                    <div class="img-hover"></div>
+                                </div>
+                                <h4 class="text-center pt-2 text-black-50">SEND GIFTS TO UK</h4>
+
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="overseasgifts.html">
+                            <div class="place-name">
+                                <div class="palce-img">
+                                    <img src="my img/2eb9960ec8124c5c31fe2232df08fd47.jpg" alt="not found"
+                                        class="w-100">
+                                    <div class="img-hover"></div>
+                                </div>
+                                <h4 class="text-center pt-2 text-black-50">SEND GIFTS TO NEWZELAND</h4>
+
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- overseas gifts section end-->
+        <!-- premium gift section start -->
+
+        <div class="container-fluid container">
+            <div class="premium-gift">
+                <div class="title">
+                    <div class="title-name"><span>Premium Gifts</span></div>
+                    <div class="title-detail">
+                        <p>Most Expensive Collection For You</p>
+                    </div>
+                </div>
+                <div class="expensive-gift">
+                    <div class="row gy-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/60ab2024116cad5cebb71c40e723d06c (1).jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Gold Ring with Extra Carving</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>$250 <span class="text-decoration-line-through text-black-50">$300</span></p>
+                                        <h5>20% off</h5>
+                                    </div>
+
+                                    <div class="star-icon" style="color: rgb(236, 188, 31);"><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/991f7321857d7bf9e7b85f07ca2ae3dd.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Necklace Set From Kalamandir</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>$1100 <span class="text-decoration-line-through text-black-50">$1250</span>
+                                        </p>
+                                        <h5>7% off</h5>
+                                    </div>
+
+                                    <div class="star-icon" style="color: rgb(236, 188, 31);"><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><i
+                                            class="fa-solid fa-star"></i></div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/c385298564b3f2e4e319a0ef9c3547ca.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Luxurious Gold Plated Bracelet</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>$50 <span class="text-decoration-line-through text-black-50">$72</span></p>
+                                        <h5>4% off</h5>
+                                    </div>
+
+                                    <div class="star-icon" style="color: rgb(236, 188, 31);"><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-regular fa-star"></i></div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/6ca81042d459234122729a6dd0db20e0.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Gold Chain For Men 6/9MM</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>$50 <span class="text-decoration-line-through text-black-50">$65</span></p>
+                                        <h5>10% off</h5>
+                                    </div>
+
+                                    <div class="star-icon" style="color: rgb(236, 188, 31);"><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                                            class="fa-regular fa-star"></i></div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- premium gift section end -->
+        <!-- discount banner start -->
+        <div class="container-fluid discount-lable">
+            <a href=""><img src="my img/discount labal.gif" alt="" class="w-100"></a>
+        </div>
+        <!-- discount banner end -->
+
+        <!-- week special section start -->
+
+        <div class="container-fluid container">
+            <div class="weekly-gift">
+                <div class="title">
+                    <div class="title-name"><span>Week Special Gifts</span></div>
+                    <div class="title-detail">
+                        <p>Trendig gift collection for this week</p>
+                    </div>
+                </div>
+                <div class="trending-gift">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/p-led-night-lamp-with-marker-assorted-single-piece-270635-m.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>
+                                        LED Night Lamp</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>₹ 480 <span class="text-decoration-line-through text-black-50">₹ 1190</span>
+                                        </p>
+                                        <h5>25% off</h5>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/2cb70799a1c3d95c489ab0e4c6eba6be.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>
+                                        Luxery quartz watch</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>₹ 1300 <span class="text-decoration-line-through text-black-50">₹ 1990</span>
+                                        </p>
+                                        <h5>18% off</h5>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/fa20383aaacc2f604331f35cec60dbfe.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>
+                                        Flavourtown Bakery</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>₹ 990 <span class="text-decoration-line-through text-black-50">₹ 1500</span>
+                                        </p>
+                                        <h5>12% off</h5>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-img-1 position-relative">
+                                    <img src="my img/03d5cdc9dddeef4261ea69ae0a4cb0a4.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="fav-icon position-absolute"
+                                        style="right: 10px;top: 10px;background-color: pink;padding: 5px 10px;border-radius: 5px; color:white;">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 style="font-size: 14px;">
+                                        Dolce & Gabbana</h4>
+                                    <div class="price d-flex text-black">
+                                        <p>₹ 599 <span class="text-decoration-line-through text-black-50">₹ 999</span>
+                                        </p>
+                                        <h5>20% off</h5>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="addtocart.html"><button class="add-cart-btn w-100 mt-3 p-1"
+                                                style="background-color: #ff8fa4; color: #ffecf2; border: none;">Add to
+                                                Cart</button></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- week special section end -->
+
+        <!-- wall of fame start -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="cele-img">
+                    <div class="title">
+                        <div class="title-name"><span>Wall of Fame</span></div>
+                        <div class="title-detail">
+                            <p>Celeb #HappyProppper's Seal of Approval</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <img src="my img/wall_of_fame_d_ps24_illustration_20230615.jpg" alt="" class="w-100">
+        </div>
+
+        <!-- wall of fame end -->
+
+        <!-- services section start  -->
+        <div class="container-fluid">
+
+            <div class="services">
+                <div class="service-body">
+                    <div class="row gy-4">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="service-1">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <span>Fast Delivery</span>
+                                <p>We deliver warming gift all over the world</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="service-1">
+                                <i class="fa-solid fa-house-flag"></i>
+                                <span>Made in India</span>
+                                <p>All our products are made in India.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="service-1">
+                                <i class="fa-solid fa-fingerprint"></i>
+                                <span>Secure payment</span>
+                                <p>Payment information is processed securely.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="service-1">
+                                <i class="fa-solid fa-blender-phone"></i>
+                                <span>Contact us</span>
+                                <p>Need to contact us? Call +91 1345 567 457</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- services section end -->
+
+        <!-- frequently ask questions start -->
+
+        <div class="container-fluid container">
+            <div class="Faq">
+                <div class="title">
+                    <div class="title-name"><span>Frequently Asked Questions</span></div>
+
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed"
+                                style="background-color: #ff8fa4; color: WHITE; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600;"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                What is Giftery?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Giftery is the online Personalised Gifting shop with amazing
+                                gifting ideas for all your special relationships. It is one of the India's leading
+                                Gifting Company that provides gifts for all your occasion like Valentines Day gift,
+                                Birthday Gift, Mothers Day gift, Anniversary Gifts, etc.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Where Can I Find the Personalised Online Gifts in India?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Giftery is the best online gift shop in India, offering you a
+                                huge variety of gift options ranging from love & romance gifts, personalised gifts,
+                                hampers etc. at an affordable price and free shipping. </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Where Do You Provide Delivery of Your Products?
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Giftery is India's exclusion online gift shop providing delivery
+                                of its product all over India, including Bangalore, Kolkata, Delhi, Gurgaon, Ahmedabad,
+                                Chennai etc. No matter where your loved ones live in India, sending them gifts from our
+                                portal is easy with our hassle-free delivery process. Visit our site to view more
+                                cities. </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Can I Personalise Gift Products in Your Store?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Yes, we let you go the extra mile to bring a smile to your loved
+                                one's face by personalising the best gifts with heartfelt messages and memorable photos.
+                                You can personalise mugs, cushions, lamps, photo frames etc. when purchasing from our
+                                store. </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Do you accept bulk orders
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Yes. On our gift portal India, you can order a single gift,
+                                combos or hampers in bulk for corporate gifting purposes and other festivals. </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- frequently ask questions end -->
+
+
+    </main>
+    <!-- main end -->
+
+
+    <!-- footer start -->
+    <!-- membership section start -->
+
+    <div class="container-fluid" style="background-color: #ffdae0; width: 100%;">
+        <div class="container membership text-center">
+
+            <div class="info p-5">
+                <h1>Newsletter Updates!!!</h1>
+                <span class="fs-5">Get Unique And Trendy Gift Ideas and Best Offers Delivered To You In Inbox</span>
+                <div class="mail d-flex flex-wrap" style="justify-content: center;">
+                    <input type="email" placeholder="Enter Email-Id" style="width: 25%; padding: 5px;" class="border-0">
+                    <button class="text-white border-0" style="background-color:#ff8fa4; padding: 5px;">SUBMIT</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- membership section end -->
+
+    <footer class="footer-bg">
+        <div class="container-fluid">
+            <div class="container footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="index.html"><img src="my img/tey (1).png" alt=""
+                                style="width: 130px; height: 75px;"></a>
+                        <div class="conatct-1" style="margin-top: 25px;     color: #ffecf2;
+                        text-shadow: 2px 2px 5px black; ">
+                            <p>C703 Curio Corner</p>
+                            <p>India, NY 535022</p>
+                            <p class="margin-top"><strong>Phone:</strong> +91 1345 5674 57</p>
+                            <p><strong>Email:</strong> giftery@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 margin-class">
+                        <span class="fs-6 fw-bold mb-3 d-block">Useful Links</span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="trackmyorder.html">Track My Order</a></li>
+                            <li><a href="corporategift.html">Corporate Gifts</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 margin-class">
+
+                        <span class="fs-6 fw-bold mb-3 d-block">Policy Info</span>
+                        <ul>
+                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms Of Services</a></li>
+                            <li><a href="refundpolicy.html">Refund Policy</a></li>
+                            <li><a href="shippinhpolicy.html">Shipping Policy</a></li>
+
+
+                        </ul>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-lg-2 margin-class">
+                        <span class="fs-6 fw-bold mb-3 d-block">Follow Us</span>
+                        <ul class="d-flex flex-wrap footer-social">
+                            <li style="padding: 15px;"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://web.whatsapp.com/" target="_blank"><i
+                                        class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/?lang=en" target="_blank"><i
+                                        class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://in.linkedin.com/" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <hr class="text-black">
+
+                <div class="text-center text-black font-size">
+                    <span>© Copyright <strong>Giftery</strong> All Rights Reserved</span>
+                    <p class="pt-1">Designed by <a href="" style="color: #ffecf2;">Mk editor</a></p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

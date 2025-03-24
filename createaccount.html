@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Giftery.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Giftery</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="position-fixed w-100" style="z-index: 999;">
+        <nav class="navbar" style="background-color: #ff8fa4;">
+            <div class="container-fluid container">
+                <div class="nav-1 w-100 d-flex">
+                    <div class="contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Call Us"><a
+                            href=""><i class="fa-solid fa-mobile-screen-button"></i> +91 1345 5674 57</a>
+                    </div>
+                    <div class="question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"><a href=""><i
+                                class="fa-solid fa-message"></i> Any Questions?</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar p-0" style="background-color: #ffecf2;">
+            <div class="container-fluid">
+                <div class="container header">
+                    <div class="row align-items-baseline">
+                        <div class="col-3 col-md-3 col-lg-2"><a href="index.html"><img src="my img/tey (1).png"
+                                    alt=""></a>
+                        </div>
+                        <div class="col-9 col-md-9 col-lg-5">
+                            <div class="search-bar position-relative"><input type="text"
+                                    placeholder=" Find Your Gifts..." class="rounded-pill w-100 p-1"
+                                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search">
+                                <div class="search-icon position-absolute"><i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <div class="row align-items-baseline">
+                                <div class="col-12 col-sm-6 col-lg-7 select-btn">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-01" data-bs-toggle="modal"
+                                        style="background-color:#ff8fa4" data-bs-target="#staticBackdrop">
+                                        <div class="select-place" style="font-size: 14px; font-weight: 600;">
+                                            <i class="fa-solid fa-location-dot pe-2"></i> Select Your Country
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>
+
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered text-center">
+                                            <div class="modal-content" style="background-color: #ffdae0">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel"><u><b
+                                                                style="color: rgb(122, 23, 23);">Let's Personalize
+                                                                Your Experience!</b></u></h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p style="color: rgb(122, 23, 23);"><i>Find the perfect gifts for
+                                                            you or
+                                                            your loved ones – it's like magic!</i></p>
+                                                    <div class="country d-flex flex-wrap justify-content-around">
+                                                        <div class="india-1"><input type="radio" name="india"
+                                                                required><b style="color: rgb(122, 23, 23);">In
+                                                                India</b></div>
+                                                        <div class="india-1"><input type="radio" name="india"
+                                                                required><b style="color: rgb(122, 23, 23)">Outside
+                                                                India</b>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="pincode mt-3">
+                                                        <input type="text" class="w-75 p-1 rounded-pill"
+                                                            style="color: rgb(122, 23, 23); font-weight: 600;" required
+                                                            placeholder="Enter Your Pincode or Country Name">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer justify-content-around">
+
+                                                    <a href="index.html"><button type="button"
+                                                            class="btn continue-btn"
+                                                            style="background-color: crimson; color: pink;">Continue
+                                                            Shopping</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-5 m-auto">
+                                    <div class="d-flex flex-wrap main-icon">
+
+                                        <div class="cart position-relative" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Cart">
+
+                                            <a href="" type="button" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                            <span
+                                                class="position-absolute top-0 translate-middle badge rounded-pill bg-info text-danger">
+                                                0</span>
+                                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                                aria-labelledby="offcanvasRightLabel">
+                                                <div class="offcanvas-header" style="background-color: #f391a1;">
+                                                    <h5 id="offcanvasRightLabel">My Cart</h5>
+                                                    <button type="button" class="btn-close text-reset"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body" style="background-color: #ffdae0;">
+                                                    <img src="my img/513c53a03f182d3a8966bc3a6c0a2e54.jpg" alt=""
+                                                        class="w-100">
+
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+
+                                        <div class="wishlist position-relative" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Wishlist">
+                                            <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                                aria-controls="offcanvasRight"><i class="fa-regular fa-heart"></i></a>
+                                            <span
+                                                class="position-absolute top-0 translate-middle badge rounded-pill bg-warning text-danger">
+                                                0</span>
+                                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                                                aria-labelledby="offcanvasRightLabel">
+                                                <div class="offcanvas-header"
+                                                    style="background-color: #f391a1; color: rgb(117, 25, 25);">
+                                                    <h5 id="offcanvasRightLabel">Favourite Items</h5>
+                                                    <button type="button" class="btn-close text-reset"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body" style="background-color: #ffdae0;">
+                                                    <img src="my img/0ef3b8c222b707583b00f67a147d7a2e.gif" alt=""
+                                                        class="w-100">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="account" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            title="My Account">
+                                            <a href="myaccount.html"><i class="fa-solid fa-user"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Personal Occasion
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="birthday.html">Birthday Special</a></li>
+                                            <li><a class="dropdown-item" href="anniversary.html">Anniversary Special</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="wedding.html">Wedding & Engagement</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="babyshower.html">Baby Shower</a></li>
+
+                                            <li><a class="dropdown-item" href="housewarming.html">Housewarming Gifts</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="customized.html">Customized Gift</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="asthetics.html">Asthetics Gifts</a>
+                                    </li>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="aboutus.html">About Us</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Recipients
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="wife.html">Wife</a></li>
+                                            <li><a class="dropdown-item" href="husband.html">Husband</a></li>
+                                            <li><a class="dropdown-item" href="mom.html">Mom</a></li>
+                                            <li><a class="dropdown-item" href="dad.html">Dad</a></li>
+                                            <li><a class="dropdown-item" href="sister.html">Sister</a></li>
+                                            <li><a class="dropdown-item" href="brother.html">Brother</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <a href="fastshipping.html" class="fast-shipping">
+                                <img src="my img/scooter-animation-fifth.gif" alt=" " class="w-100">
+                            </a>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <nav aria-label="breadcrumb" style="padding-top: 190px; background-color: #f391a1;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" style="color: rgb(206, 33, 91);">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Account</li>
+        </ol>
+    </nav>
+
+    <main>
+        <div class="container-fluid" style="background-color: #ffdae0; width: 100%;">
+            <div class="container create-acc">
+                <div class="row justify-content-center mt-5 mb-5">
+                    <div class="col-12 col-lg-4">
+                        <h1 class="text-center">Create Account</h1>
+                        <div class="account-info">
+                            <input type="text" class="w-100 p-1 mt-2" placeholder="Fist Name">
+                            <input type="text" class="w-100 p-1 mt-2" placeholder="Last Name">
+                            <input type="email" class="w-100 p-1 mt-2" placeholder="email">
+                            <input type="password" class="w-100 p-1 mt-2" placeholder="password">
+                        </div>
+                        <div class="sign-btn mb-2 mt-3"><button style="width: 100%;"><a href="myaccount.html"
+                                    class="text-black">Create</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--header end -->
+    <!-- footer start -->
+
+    <footer class="footer-bg">
+        <div class="container-fluid">
+            <div class="container footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="index.html"><img src="my img/tey (1).png" alt=""
+                                style="width: 130px; height: 75px;"></a>
+                        <div class="conatct-1" style="margin-top: 25px;     color: #ffecf2;
+                        text-shadow: 2px 2px 5px black; ">
+                            <p>C703 Curio Corner</p>
+                            <p>India, NY 535022</p>
+                            <p class="margin-top"><strong>Phone:</strong> +91 1345 5674 57</p>
+                            <p><strong>Email:</strong> giftery@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 margin-class">
+                        <span class="fs-6 fw-bold mb-3 d-block">Useful Links</span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="trackmyorder.html">Track My Order</a></li>
+                            <li><a href="corporategift.html">Corporate Gifts</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 margin-class">
+
+                        <span class="fs-6 fw-bold mb-3 d-block">Policy Info</span>
+                        <ul>
+                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms Of Services</a></li>
+                            <li><a href="refundpolicy.html">Refund Policy</a></li>
+                            <li><a href="shippinhpolicy.html">Shipping Policy</a></li>
+
+
+                        </ul>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-lg-2 margin-class">
+                        <span class="fs-6 fw-bold mb-3 d-block">Follow Us</span>
+                        <ul class="d-flex flex-wrap footer-social">
+                            <li style="padding: 15px;"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://web.whatsapp.com/" target="_blank"><i
+                                        class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/?lang=en" target="_blank"><i
+                                        class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://in.linkedin.com/" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <hr class="text-black">
+
+                <div class="text-center text-black font-size">
+                    <span>© Copyright <strong>Giftery</strong> All Rights Reserved</span>
+                    <p class="pt-1">Designed by <a href="" style="color: #ffecf2;">Mk editor</a></p>
+
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
+
+
+
+
+
+    <!-- footer end -->
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
